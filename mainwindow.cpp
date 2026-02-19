@@ -34,7 +34,7 @@ MainWindow::MainWindow(QWidget *parent)
     QFileSystemModel *model = new QFileSystemModel(this);
 
     // путь, который нужно показать
-    QString path = "/home/igmunv/proj/test";
+    QString path = "/home/igmunv/projects/test";
 
     model->setRootPath(path);
 

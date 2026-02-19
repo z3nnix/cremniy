@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <style-scheme version="1.0" name="Dracula">
-    <style name="Text" foreground="#f8f8f2" background="#282a36"/>
+    <style name="Text" foreground="#ffffff" background="#262626"/>
     <style name="Link" foreground="#8be9fd" underlineStyle="SingleUnderline"/>
     <style name="Selection" background="#44475a"/>
-    <style name="LineNumber" foreground="#6272a4"/>
+    <style name="LineNumber" foreground="#a1a1a1"/>
     <style name="SearchResult" foreground="#d57544" bold="true"/>
     <style name="SearchScope" foreground="#000000" background="#f8f8f2"/>
     <style name="Parentheses" foreground="#f8f8f2" bold="true"/>
     <style name="ParenthesesMismatch" foreground="#f8f8f2"/>
     <style name="AutoComplete" foreground="#f8f8f2"/>
-    <style name="CurrentLine" foreground="#000000" background="#383b4c"/>
-    <style name="CurrentLineNumber" foreground="#f8f8f2"/>
+    <style name="CurrentLine" foreground="#000000" background="#262626"/>
+    <style name="CurrentLineNumber" foreground="#ffffff"/>
     <style name="Occurrences" foreground="#000000" background="#f8f8f2"/>
     <style name="Occurrences.Unused" foreground="#f8f8f2"/>
     <style name="Occurrences.Rename" foreground="#000000" background="#f8f8f2"/>
@@ -22,7 +22,7 @@
     <style name="Field" foreground="#ffffff"/>
     <style name="Static" foreground="#ffb86c"/>
     <style name="VirtualMethod" foreground="#50fa7b" italic="true"/>
-    <style name="Function" foreground="#50fa7b"/>
+    <style name="Function" foreground="#ffffff"/>
     <style name="Keyword" foreground="#ff79c6" bold="true"/>
     <style name="PrimitiveType" foreground="#7ce4fb" italic="true"/>
     <style name="Operator" foreground="#ffffff"/>
@@ -33,7 +33,7 @@
     <style name="Doxygen.Comment" foreground="#6272a4"/>
     <style name="Doxygen.Tag" foreground="#6272a4" bold="true"/>
     <style name="VisualWhitespace" foreground="#6272a4"/>
-    <style name="QmlLocalId" foreground="#50fa7b" italic="true"/>
+    <style name="QmlLocalId" foreground="#ffffff" italic="true"/>
     <style name="QmlExternalId" foreground="#ffb86c" italic="true"/>
     <style name="QmlTypeId" foreground="#8be9fd"/>
     <style name="QmlRootObjectProperty" foreground="#50fa7b" italic="true"/>
