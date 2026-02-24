@@ -18,7 +18,7 @@ set(PROJECT_SOURCES
         main.cpp
 )
 
-add_subdirectory(codeeditor)
+add_subdirectory(components/codeeditor)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(untitled1
@@ -51,7 +51,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
         resources/cremniy_res.qrc
     )
-    target_include_directories(untitled1 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+    target_include_directories(untitled1 PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/widgets)
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET untitled1 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
 #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)

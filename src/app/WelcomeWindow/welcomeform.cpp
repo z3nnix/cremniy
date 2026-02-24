@@ -281,6 +281,15 @@ void WelcomeForm::SetProjectHistoryList(){
         lines = text.split(QRegularExpression("[\r\n]+"), Qt::SkipEmptyParts);
         history_file.close();
     }
+
+    QStringList filtered;
+    for (const QString& l : lines) {
+        if (!QDir(l).exists()) continue;
+        if (!QFile::exists(l + "/project.cremniy")) continue;
+        filtered << l;
+    }
+    lines = filtered;
+
     QStringListModel *model = new QStringListModel(this);
     model->setStringList(lines);
     history_project_list->setModel(model);

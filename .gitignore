@@ -82,7 +82,10 @@ CMakeLists.txt.user*
 .uic/
 /build*/
 /.qtcreator/
-
+/.qt/
+.ninja_deps
+.ninja_log
+.ninja_logs
 
 build/
 CMakeFiles/
