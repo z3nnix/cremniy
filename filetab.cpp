@@ -23,11 +23,8 @@ void FileTab::saveFile(){
     file.write(data);
     file.close();
     tooltabInner->get_codeEditor()->document()->setModified(false);
-    FilesTabWidget* parrentTabWidget = qobject_cast<FilesTabWidget*>(parent());
-    int index = parrentTabWidget->indexOf(this);
-    if (index != -1) {
-        parrentTabWidget->setTabText(index, QFileInfo(filePath).fileName());
-    }
+
+    fwparent->setTabText(fwparent->currentIndex(), QFileInfo(filePath).fileName());
 }
 
 void FileTab::fileModifyEvent(bool modified){
@@ -35,11 +32,5 @@ void FileTab::fileModifyEvent(bool modified){
     qDebug() << "mod";
     file_is_modify = true;
 
-    FilesTabWidget* parrentTabWidget = qobject_cast<FilesTabWidget*>(parent());
-    if (!parrentTabWidget) return;
-
-    int index = parrentTabWidget->indexOf(this);
-    if (index != -1) {
-        parrentTabWidget->setTabText(index, QFileInfo(filePath).fileName()+"*");
-    }
+    fwparent->setTabText(fwparent->currentIndex(), QFileInfo(filePath).fileName()+"*");
 }

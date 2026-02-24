@@ -42,6 +42,7 @@ void FilesTabWidget::openFile(QString filePath, QString tabTitle){
     vlayout->addWidget(tooltabWidget);
     vlayout->setContentsMargins(0,0,0,0);
     filetab->setLayout(vlayout);
+    filetab->fwparent = this;
     int new_tab_index = this->addTab(filetab, tabTitle);
     this->setCurrentIndex(new_tab_index);
     connect(tooltabWidget->get_codeEditor()->document(), &QTextDocument::modificationChanged,
