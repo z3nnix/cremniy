@@ -3,9 +3,14 @@
   <br>
   <h3>Cremniy</h3>
   <h6>A development environment for low-level programming that consolidates all low-level tools in a single application</h6>
+
+  [![License](https://img.shields.io/github/license/igmunv/cremniy?color=orange&style=flat-square)](LICENSE)
+  [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
+  [![Community](https://img.shields.io/badge/Community-Telegram-blue?logo=telegram&style=flat-square)](https://t.me/your_telegram_link)
+  
 </div>
 
-<br><br><br>
+<br>
 
 ## ✨ Features
 - Code Editor
@@ -13,3 +18,4 @@
 - ~Disassembler~
 - ~Debugger~
 - ~Memory Map~
+
